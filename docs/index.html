@@ -29,7 +29,7 @@ radar_visualization({
   quadrants: [
     { name: "Languages" },
     { name: "Infrastructure" },
-    { name: "Frameworks" },
+    { name: "Tools & Frameworks" },
     { name: "Data Management" }
   ],
   rings: [
@@ -42,28 +42,29 @@ radar_visualization({
   // zoomed_quadrant: 0,
   //ENTRIES
   entries: [
+  // Data Management
       {
         quadrant: 3,
         ring: 0,
         label: "PostgreSQL",
-        active: false,
+        active: true,
         link: "../datastores/postgresql.html",
         moved: 0
       },
       {
         quadrant: 3,
         ring: 0,
-        label: "Spark",
+        label: "MongoDB",
         active: false,
-        link: "../data_processing/spark.html",
+        link: "../data_processing/mongodb.html",
         moved: 0
       },
       {
         quadrant: 3,
-        ring: 2,
-        label: "YARN",
+        ring: 0,
+        label: " BigQuery",
         active: false,
-        link: "../data_processing/yarn.html",
+        link: "../datastores/cassandra.html",
         moved: 0
       },
       {
@@ -76,31 +77,31 @@ radar_visualization({
       },
       {
         quadrant: 3,
-        ring: 2,
-        label: "Cassandra",
-        active: false,
-        link: "../datastores/cassandra.html",
-        moved: 0
-      },
-      {
-        quadrant: 3,
         ring: 0,
-        label: "Elasticsearch",
-        active: false,
-        link: "../datastores/elasticsearch.html",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 0,
-        label: "tableau",
+        label: "Tableau",
         active: false,
         link: "../datastores/tableau.html",
         moved: 0
       },
       {
         quadrant: 3,
-        ring: 0,
+        ring: 1,
+        label: "Kafka",
+        active: false,
+        link: "../queues/kafka.html",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "RabbitMQ",
+        active: false,
+        link: "../queues/rabbitmq.html",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
         label: "Redis",
         active: false,
         link: "../datastores/redis.html",
@@ -108,84 +109,15 @@ radar_visualization({
       },
       {
         quadrant: 3,
-        ring: 0,
-        label: "Solr",
+        ring: 2,
+        label: "Elasticsearch",
         active: false,
-        link: "../datastores/solr.html",
+        link: "../datastores/elasticsearch.html",
         moved: 0
       },
-      {
-        quadrant: 3,
-        ring: 1,
-        label: "AWS DynamoDB",
-        active: false,
-        link: "../datastores/aws_dynamodb.html",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "Aerospike",
-        active: false,
-        link: "../datastores/aerospike.html",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "CouchBase",
-        active: false,
-        link: "../datastores/couchbase.html",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "HBase",
-        active: false,
-        link: "../datastores/hbase.html",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "Memcached",
-        active: false,
-        link: "../datastores/memcached.html",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "MongoDB",
-        active: false,
-        link: "../datastores/mongodb.html",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "MySQL",
-        active: false,
-        link: "../datastores/mysql.html",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "Oracle DB",
-        active: false,
-        link: "../datastores/oracle_db.html",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "ZooKeeper",
-        active: false,
-        link: "../datastores/zookeeper.html",
-        moved: 0
-      },
+
+
+// Tools & Frameworks
       {
         quadrant: 2,
         ring: 0,
@@ -205,9 +137,17 @@ radar_visualization({
       {
         quadrant: 2,
         ring: 0,
-        label: "scikit-learn",
+        label: "React Native",
         active: false,
-        link: "../frameworks/scikit_learn.html",
+        link: "../frameworks/react-native.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Detox",
+        active: false,
+        link: "../frameworks/detox.html",
         moved: 0
       },
       {
@@ -220,39 +160,7 @@ radar_visualization({
       },
       {
         quadrant: 2,
-        ring: 2,
-        label: "Aurelia",
-        active: false,
-        link: "../frameworks/aurelia.html",
-        moved: 0
-      },
-      {
-        quadrant: 2,
-        ring: 2,
-        label: "gRPC",
-        active: false,
-        link: "../frameworks/grpc.html",
-        moved: 0
-      },
-      {
-        quadrant: 2,
-        ring: 2,
-        label: "Http4s",
-        active: false,
-        link: "../frameworks/http4s.html",
-        moved: 0
-      },
-      {
-        quadrant: 2,
-        ring: 2,
-        label: "jOOQ",
-        active: false,
-        link: "../frameworks/jooq.html",
-        moved: 0
-      },
-      {
-        quadrant: 2,
-        ring: 2,
+        ring: 0,
         label: "Redux",
         active: false,
         link: "../frameworks/redux.html",
@@ -260,10 +168,26 @@ radar_visualization({
       },
       {
         quadrant: 2,
-        ring: 2,
-        label: "Vert.x",
+        ring: 1,
+        label: "MobX",
         active: false,
-        link: "../frameworks/vertx.html",
+        link: "../frameworks/mobx.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 1,
+        label: "BranchIO",
+        active: false,
+        link: "../frameworks/branchio.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 1,
+        label: "Cloud Functions",
+        active: false,
+        link: "../frameworks/cloud-functions-gcp.html",
         moved: 0
       },
       {
@@ -276,18 +200,42 @@ radar_visualization({
       },
       {
         quadrant: 2,
-        ring: 3,
-        label: "Activiti",
+        ring: 2,
+        label: "Flutter",
         active: false,
-        link: "../frameworks/activiti.html",
+        link: "../frameworks/flutter.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 2,
+        label: "Preact",
+        active: false,
+        link: "../frameworks/preact.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 2,
+        label: "Rollup",
+        active: false,
+        link: "../frameworks/rollup.html",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 2,
+        label: "CircleCI",
+        active: false,
+        link: "../frameworks/circleci.html",
         moved: 0
       },
       {
         quadrant: 2,
         ring: 3,
-        label: "AngularJS 1.x",
+        label: "JQuery",
         active: false,
-        link: "../frameworks/angularjs_1x.html",
+        link: "../frameworks/jquery.html",
         moved: 0
       },
       {
@@ -301,19 +249,15 @@ radar_visualization({
       {
         quadrant: 2,
         ring: 3,
-        label: "Drools",
+        label: "AngularJS",
         active: false,
-        link: "../frameworks/drools.html",
+        link: "../frameworks/angularjs.html",
         moved: 0
       },
-      {
-        quadrant: 2,
-        ring: 3,
-        label: "Spray",
-        active: false,
-        link: "../frameworks/spray.html",
-        moved: 0
-      },
+
+
+
+// Infrastructure
       {
         quadrant: 1,
         ring: 0,
@@ -333,6 +277,14 @@ radar_visualization({
       {
         quadrant: 1,
         ring: 0,
+        label: "Cloudfront",
+        active: false,
+        link: "../infrastructure/cloudfront.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
         label: "Nginx",
         active: false,
         link: "../infrastructure/nginx.html",
@@ -341,6 +293,14 @@ radar_visualization({
       {
         quadrant: 1,
         ring: 0,
+        label: "AWS Route53",
+        active: false,
+        link: "../infrastructure/aws-route53.html",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 2,
         label: "OpenTracing",
         active: false,
         link: "../infrastructure/opentracing.html",
@@ -349,27 +309,32 @@ radar_visualization({
       {
         quadrant: 1,
         ring: 1,
-        label: "Failsafe",
+        label: "Rapid7",
         active: false,
-        link: "../infrastructure/failsafe.html",
-        moved: 0
+        link: "../infrastructure/rapid7.html",
+        moved: 1
       },
       {
         quadrant: 1,
         ring: 1,
-        label: "Undertow",
+        label: "ArgoCD",
         active: false,
-        link: "../infrastructure/undertow.html",
-        moved: 0
+        link: "../infrastructure/argocd.html",
+        moved: 1
       },
       {
         quadrant: 1,
         ring: 2,
-        label: "AWS Lambda",
+        label: "Kibana",
         active: false,
-        link: "../infrastructure/aws_lambda.html",
-        moved: 0
+        link: "../infrastructure/kibana.html",
+        moved: 1
       },
+
+
+
+
+// Languages
       {
         quadrant: 0,
         ring: 0,
@@ -389,6 +354,14 @@ radar_visualization({
       {
         quadrant: 0,
         ring: 0,
+        label: "Elixir",
+        active: true,
+        link: "elixir.html",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 0,
         label: "Java",
         active: true,
         link: "java.html",
@@ -397,25 +370,25 @@ radar_visualization({
       {
         quadrant: 0,
         ring: 0,
-        label: "OpenAPI (Swagger)",
+        label: "ObjectiveC",
         active: true,
-        link: "openapi_swagger.html",
-        moved: 0
-      },
-      {
-        quadrant: 0,
-        ring: 0,
-        label: "Swift",
-        active: true,
-        link: "swift.html",
+        link: "ObjectiveC.html",
         moved: 0
       },
       {
         quadrant: 0,
         ring: 1,
-        label: "Elixir",
+        label: "Kotlin",
         active: true,
-        link: "elixir.html",
+        link: "kotlin.html",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 1,
+        label: "OpenAPI (Swagger)",
+        active: true,
+        link: "openapi_swagger.html",
         moved: 0
       },
       {
@@ -428,82 +401,26 @@ radar_visualization({
       },
       {
         quadrant: 0,
-        ring: 2,
-        label: "Kotlin",
+        ring: 1,
+        label: "PUG",
         active: true,
-        link: "kotlin.html",
+        link: "pub.html",
         moved: 0
       },
       {
         quadrant: 0,
         ring: 2,
-        label: "GraphQL",
-        active: true,
-        link: "graphql.html",
-        moved: 1
-      },
-      {
-        quadrant: 0,
-        ring: 2,
-        label: "Rust",
-        active: true,
-        link: "rust.html",
-        moved: 0
-      },
-      {
-        quadrant: 0,
-        ring: 3,
-        label: "C languages",
-        active: true,
-        link: "c_languages.html",
-        moved: 0
-      },
-      {
-        quadrant: 0,
-        ring: 3,
-        label: "CoffeeScript",
-        active: true,
-        link: "coffeescript.html",
-        moved: 0
-      },
-      {
-        quadrant: 0,
-        ring: 3,
-        label: "Erlang",
-        active: true,
-        link: "erlang.html",
-        moved: 0
-      },
-      {
-        quadrant: 0,
-        ring: 3,
-        label: "Groovy",
-        active: true,
-        link: "groovy.html",
-        moved: 0
-      },
-      {
-        quadrant: 0,
-        ring: 3,
-        label: ".NET languages",
-        active: true,
-        link: "net_languages.html",
-        moved: 0
-      },
-      {
-        quadrant: 0,
-        ring: 3,
-        label: "Perl",
-        active: true,
-        link: "perl.html",
-        moved: 0
-      },
-      {
-        quadrant: 0,
-        ring: 3,
         label: "PHP",
         active: true,
         link: "php.html",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "Dart",
+        active: true,
+        link: "dart.html",
         moved: 0
       },
       {
@@ -515,45 +432,13 @@ radar_visualization({
         moved: 0
       },
       {
-        quadrant: 3,
-        ring: 0,
-        label: "Kafka",
-        active: false,
-        link: "../queues/kafka.html",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 1,
-        label: "RabbitMQ",
-        active: false,
-        link: "../queues/rabbitmq.html",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 2,
-        label: "AWS Kinesis",
-        active: false,
-        link: "../queues/aws_kinesis.html",
-        moved: 0
-      },
-      {
-        quadrant: 3,
+        quadrant: 0,
         ring: 3,
-        label: "ActiveMQ",
-        active: false,
-        link: "../queues/activemq.html",
+        label: "Erlang",
+        active: true,
+        link: "erlang.html",
         moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "HornetQ",
-        active: false,
-        link: "../queues/hornetq.html",
-        moved: 0
-      },
+      }
   ]
   //ENTRIES
 });
